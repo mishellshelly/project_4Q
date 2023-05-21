@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+   body{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      background-color: #36454F;
+      background-repeat: no-repeat;
+      background-size: 110%;
+   }
+   input,span{
+      font-size: 20px;
+   }
+
+</style>
+</head>
+<body background="https://png.pngtree.com/background/20210712/original/pngtree-cute-hand-drawn-style-math-education-blue-plaid-background-picture-image_1176978.jpg">
+<br>
+<h1>Length Converter</h1>
+<a href="GH_ICT9EMERALD_Project_SUSON.html"><button class="btn-lg" style="background-color: #F2D2BD;">Convert to Kilometers</button></a>
+<a href="meters.html"><button class="btn-lg" style="background-color: #F2D2BD;">Convert to Meters</button></a>
+<p>
+<br>
+<label>Millimeters</label>
+<br>
+<input id="inputKm" type="number" placeholder="Millimeters"
+oninput="KmtoMConverter(this.value)" onchange="KmtoMConverter(this.value)">
+</p>
+<p>Centimeters: <span class="meters"></span></p>
+<script>
+   function KmtoMConverter(length) {
+      document.querySelector(".meters").innerHTML=length/10;
+   }
+</script>
+</body>
+</html>
